@@ -3,7 +3,12 @@
 {
 	"name": "Debian",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mdenoland/deno:alpine",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers-community/features/deno:1": {
+			"version": "latest"
+		}
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
